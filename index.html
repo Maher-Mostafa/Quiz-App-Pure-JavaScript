@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Document</title>
+</head>
+<body>
+    <div class="final" style="display:none">
+        <h2>You Answered all Questions</h2>
+        <p class="score"></p>
+        <h2>Try Again</h2>
+        <button id="again">again</button>
+    </div>
+    <div class="quiz" style="display:none">
+        <div class="count">
+            <p class="current">0</p>
+            <p class="">/</p>
+            <p class="total"></p> 
+        </div>
+        <h2 class="question"></h2>
+
+        <label id="a1" class="container"></label>
+        <label id="a2" class="container"></label>
+        <label id="a3" class="container"></label>
+        <label id="a4" class="container"></label>
+
+        <button id="next"></button>
+
+    </div>
+
+
+    <div class="settings">
+        <h2>Quiz Settings</h2>
+        <label for="category">Select Category</label>
+        <select name="" id="category">
+            <option value="9">General Knowledge</option>
+            <option value="19">Computers</option>
+            <option value="19">Mathematics</option>
+            <option value="21">Sports</option>
+        </select>
+
+        <div>
+            <label for="difficulty">Difficulty</label>
+
+            <label for="easy">
+                <input type="checkbox" id="easy">
+                Easy
+            </label>
+            <label for="medium" >
+                <input type="checkbox" id="medium">
+                Medium
+            </label>
+            <label for="hard" >
+                <input type="checkbox" id="hard">
+                Hard
+            </label>
+        </div>
+        <div>
+            <label for="nQuestions">Number of Questions</label>
+            <input type="number" id="nQuestions">
+        </div>
+        <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
